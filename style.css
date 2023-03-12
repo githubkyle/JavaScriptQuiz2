@@ -1,0 +1,32 @@
+#timer {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#result {
+  position: fixed;
+  right: 0;
+  top: 17px;
+}
+
+#questions {
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+}
+
+#endGame {
+  text-align: center;
+}
+
+#all-scores {
+  text-align: center;
+  align-items: center;
+}
+
+#clearer {
+  text-align: center;
+}

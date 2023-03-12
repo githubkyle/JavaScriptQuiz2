@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Questions</title>
+  </head>
+  <body>
+    <div id="timer"></div>
+    <p id="result"></p>
+    <div id="questions">
+            <div id="q1">
+                    
+                      <p class="qtext">What is the use of Javascript?</p>
+                      <hr />
+                      <button id="wrong1">
+                        Nothing
+                      </button>
+                      <button id="right1">
+                        Logically interact with webpages
+                      </button>
+                      <button id="wrong2">
+                        Creates color for the internet
+                      </button>
+                      <button id="wrong3">
+                        A nutritious drink
+                      </button>
+                      <p><button id="q1q2" onclick="StartQ2()">
+                          Next
+                      </button></p>
+                    </div>
+            <div id="q2" hidden>
+                            <p class="qtext">Is Javascript a case sensitive language?</p>
+                            <hr/>
+                            <button id="right2">
+                              Yes
+                            </button>
+                            <button id="wrong4">
+                              No
+                            </button>
+                            <button id="wrong5">
+                              Sometimes
+                            </button>
+                           <p> <button id="q2q3" onclick="StartQ3()">
+                                    Next
+                                </button></p>
+                          </div>
+            <div id="q3" hidden>
+                                <p class="qtext">Commonly used data types do NOT include__:</p>
+                                  <hr />
+                                  <button id="wrong6" onclick="ShowScore()">
+                                    Strings
+                                  </button>
+                                  <button id="right3" onclick="ShowScore()">
+                                   Booleans
+                                  </button>
+                                  <button id="wrong7" onclick="ShowScore()">
+                                    Arrays
+                                  </button>
+                                  <button id="wrong8" onclick="ShowScore()">
+                                    Numbers
+                                  </button>
+                                 </div>
+    </div>
+   <div id="endGame" hidden> <p id="YourResult">
+           
+              <form >
+                  <p>Your score is:</p>
+                  <p id="posted-score" data-type="score"></p>
+                  Your name: <input type="text" id="form1" data-type="name"><br> 
+                  <input id="saver" name="saver" type="button" value="Save" onclick="SaveHighScore()" onclick="ClearName()" />
+              </form>
+          </p>
+          
+      <a id="toHighscores" href="highscores.html"> To Highscores</a> </div>
+      
+  </body>
+  <script src="script.js"></script>
+ 
+</html>
