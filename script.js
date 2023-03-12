@@ -128,5 +128,5 @@ SaveButton.addEventListener("click");
 function ClearName() {
   form1.textContent = "";
 }
-
-ShowingScores.textContent = HighScoresList;
+var SortedHighs = HighScoresList.sort(score);
+ShowingScores.textContent = SortedHighs;
