@@ -130,3 +130,8 @@ function ClearName() {
 }
 var SortedHighs = HighScoresList.sort(score);
 ShowingScores.textContent = SortedHighs;
+
+function ClearNames() {
+  HighScoresList = [];
+}
+ClearList.addEventListener("click", ClearNames);
