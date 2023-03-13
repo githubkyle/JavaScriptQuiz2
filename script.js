@@ -17,7 +17,7 @@ var W7 = document.getElementById("wrong7");
 var W8 = document.getElementById("wrong8");
 var Ender = document.getElementById("endGame");
 var score = 0;
-var StartButton = document.getElementById("Starter");
+var StartButton = document.getElementById("StartTime");
 var Respite = document.getElementById("result");
 var PostScore = document.getElementById("posted-score");
 var Name = document.getElementById("form1");
@@ -100,6 +100,11 @@ R3.addEventListener("click", function() {
   PostScore.innerHTML = score;
 });
 
+function StartQ1() {
+  StartButton.hidden = true;
+  Q1.hidden = false;
+}
+
 function StartQ2() {
   Q1.hidden = true;
   Q2.hidden = false;
@@ -124,10 +129,9 @@ function SaveHighScore() {
   HighScoresList.push(NewHighScore);
 }
 StartButton.addEventListener("click", countdown);
-SaveButton.addEventListener("click");
-function ClearName() {
+SaveButton.addEventListener("click", function ClearName() {
   form1.textContent = "";
-}
+});
 var SortedHighs = HighScoresList.sort(score);
 ShowingScores.textContent = SortedHighs;
 
